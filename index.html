@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+                
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<meta charset="utf-8" />	
+	<meta name="description" content="Project 2" />
+	<meta name="keywords"    content="Homepage" />
+	<meta name="author"      content="Nguyen Linh Dan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="img/sample.png" class="logo" alt="logo">
+        <div class="menu-toggle"></div>
+        
+         
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href=#>SYMPTOM CHECKER</a></li>
+                <li><a href=mental.html>MENTAL HEALTH</a></li>
+                <li><a href=#>PHYSICAL HEALTH</a></li>
+            </ul>
+        </nav>
+        
+       
+        <div class="clearfix"></div>
+    </header>
+    
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    
+    <!-- SlideShow-->
+    <div class="container_slide"></div>
+    
+    <!-- About Us -->
+        <div class="about_box">
+            <img src="img/sample.png" class="about_img" alt="About us">
+            <div class="about_caption">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet, qui ut suas voluptaria, eros fuisset iudicabit ex mel. An mei contentiones disputationi ipsum dolor sit amet, qui ut suas voluptaria, eros fuisset iudicabit ex mel. An mei contentiones disputationi</p>
+            </div>
+        </div>
+    
+    <!--Option-->
+        <div class="optionTitle"><h2>BEING HEALTHY</h2></div>
+        <div class="layout-option">
+            <div class="layout-option_item option_item1">
+                <img src="img/sample.png" alt="">
+                <p> Description</p> 
+                <p> An mei contentiones disputationi ipsum dolor sit amet, qui ut suas voluptaria, eros fuisset iudicabit ex mel. An mei contentiones disputationi</p>
+                <a href="#">Check Now</a>
+            </div>
+            <div class="layout-option_item option_item2">
+                <img src="img/sample.png" alt="">
+                <p> Description</p>
+                <p> An mei contentiones disputationi ipsum dolor sit amet, qui ut suas voluptaria, eros fuisset iudicabit ex mel. An mei contentiones disputationi</p>
+                <a href="#">Check Now</a>
+            </div>
+            <div class="layout-option_item option_item3">
+                <img src="img/sample.png" alt="">
+                <p> Description</p>
+                <p> An mei contentiones disputationi ipsum dolor sit amet, qui ut suas voluptaria, eros fuisset iudicabit ex mel. An mei contentiones disputationi</p>
+                <a href="#">Check Now</a>
+            </div>
+        </div>
+
+    
+    <!--Footer-->
+    <footer>
+        <div class="footer_container">
+            <img src="img/sample.png" class="footer_logo" alt="logo">
+            
+            <div class="footer_socialmedia">
+                <div class="icon_location"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="icon_location"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <div class="icon_location"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
