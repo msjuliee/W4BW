@@ -61,14 +61,14 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 
-.about_box .about_caption h2, .optionTitle h2, .articleTitle, .youtubeTitle, .websiteTitle {   /* set special font for all headings */
+.about_box .about_caption h2, .optionTitle h2, .articleTitle, .youtubeTitle, .websiteTitle, .stressTitle {   /* set special font for all headings */
     font-family: 'Coiny', cursive;
     font-size: 40px;
     font-weight: 700;
     color: #276678;
 }
 
-.about_box .about_caption p, .layout-option_item p {
+.about_box .about_caption p, .layout-option_item p, .stressContainer p {
     font-size: 18px;
     font-weight: 400;
 }
@@ -223,6 +223,59 @@ nav ul li a.active, nav ul li a:hover {
     margin: auto;
     margin-bottom: 50px;
 }
+
+/* Stress Section */
+.stressTitle {
+    text-align: center;
+}
+
+.stressContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stressContainer {
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+
+  display: block;
+  position: relative;
+  border: solid 3px #6e7491;
+  padding: 40px 60px;
+  max-width: 800px;
+  width: 70%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  transform: rotate(-1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+}
+
+.stressContainer:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.stressContainer:hover .border {
+  transform: translateY(4px) rotate(-5deg);
+}
+
+.border {
+  position: absolute;
+  transition: all 0.13s ease-in;
+}
+
+.border:before,
+.border:after {
+  color: #515d9c;
+  font-size: 15px;
+  position: absolute;
+}
+
 
 /* youtube */
 
@@ -512,7 +565,7 @@ aside { /* left image */
         width: 100%;
     }
 
-    .layout-option_item p, .layout-article_item p {
+    .layout-option_item p, .layout-article_item p,  {
         width: 100%;
         text-align: left;
         color: #fff;
@@ -552,11 +605,11 @@ aside { /* left image */
         margin: auto;
     }
     
-    .container_youtube .youtubeInfo .box .text h2, .articleTitle, .youtubeTitle, .websiteTitle {
+    .container_youtube .youtubeInfo .box .text h2, .articleTitle, .youtubeTitle, .websiteTitle, .stressTitle {
         font-size: 100%;
     }
     
-    .container_youtube .youtubeInfo .box .text p{
+    .container_youtube .youtubeInfo .box .text p, .stressContainer p{
         font-size: 90%;
     }
     
